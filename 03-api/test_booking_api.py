@@ -74,7 +74,7 @@ def test_10_put_with_wrong_token(booking):
 def test_11_delete_booking_then_get_404(token):
     bid = requests.post(f"{BASE_URL}/booking", json=PAYLOAD, headers=HEADERS).json()["bookingid"]
     r = requests.delete(f"{BASE_URL}/booking/{bid}", headers=auth(token))
-    assert r.status_code == 200
+    assert r.status_code == 201
     timed(r)
     assert requests.get(f"{BASE_URL}/booking/{bid}", headers=HEADERS).status_code == 404
 
@@ -88,7 +88,7 @@ def test_13_delete_nonexistent_booking(token):
     assert r.status_code == 405
     timed(r)
 
-
+# negative tests
 def test_14_create_missing_required_field():
     data = copy.deepcopy(PAYLOAD); del data["firstname"]
     r = requests.post(f"{BASE_URL}/booking", json=data, headers=HEADERS)
