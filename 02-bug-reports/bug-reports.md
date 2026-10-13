@@ -1,6 +1,6 @@
 # Task 2: Bug reports, Sauce Demo (problem_user)
 
-**Environment (fill in):** Chrome <version>, <OS>, <resolution>, https://www.saucedemo.com, tested <date>
+**Environment :** Chrome <Version 150.0.7871.186>, <OS: Ubuntu 22.04> , <resolution: 1920x1200>, https://www.saucedemo.com, tested <13-10-2026>
 **Preconditions (all):** Logged in as `problem_user` / `secret_sauce`. Compared with `standard_user`.
 
 ---
