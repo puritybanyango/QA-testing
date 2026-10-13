@@ -1,8 +1,5 @@
 # Task 2: Bug reports, Sauce Demo (problem_user)
 
-> DRAFT NOTES: these are commonly known problem_user defects. I must reproduce each one myself,
-> fill in the real environment, and add screenshots to `screenshots/` before submitting.
-
 **Environment (fill in):** Chrome <version>, <OS>, <resolution>, https://www.saucedemo.com, tested <date>
 **Preconditions (all):** Logged in as `problem_user` / `secret_sauce`. Compared with `standard_user`.
 
